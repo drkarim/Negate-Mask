@@ -1,5 +1,5 @@
-# Crop 3D Binary Image
-This repository contains code that crops a binary image in 3D NifTii, NRRD and GIPL formats. 
+# Negate binary mask 
+This repository contains code that will negate a mask. It accepts 3D image files in formats such as NifTii, NRRD and GIPL. The only input required is the 3D image. 
 
 ## Dependencies
 Note that this program uses [MIRTK - Medical Image Registration Library](https://github.com/BioMedIA/MIRTK) 
@@ -9,10 +9,9 @@ The dependencies are not great on MIRTK It is simply for accessing pixel values 
 ## Usage 
 The usage for the first tool ```evaluate-slice-dice``` if ``make`` installed under mirtk ``/lib/tools/``:
 ```
-./mirtk evaluate-image-crop 
+./mirtk evaluate-negate-mask
      -i <input binary image 0/1> 
-     -o <output image file containing crop>
-     -txt <output text file to write XYZ bounds>
+     -o <output image file containing negated mask>
 ```
 
 
